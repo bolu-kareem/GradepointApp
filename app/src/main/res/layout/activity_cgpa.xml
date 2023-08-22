@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:text="Calculate CGPA"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="0dp">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Number of Semesters:"
+            android:background="@drawable/backg_grey"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextSemesters"
+            android:layout_width="50dp"
+            android:padding="8dp"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:background="@drawable/backg_black"
+            android:hint="00"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:textSize="25sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonGenerateTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:text="Generate Table"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TableLayout
+            android:id="@+id/tableLayoutGPA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:padding="8dp"
+            android:stretchColumns="6dp"
+            android:layout_marginTop="10dp"
+            >
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate CGPA"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>
